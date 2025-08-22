@@ -10,10 +10,7 @@ public class ConfigurationReader {
     static {
         try {
             String path = "configuration.properties";
-            /**
-             * FileInputStream -> Javaya dışarıdan veri almak için kullanılır
-             * FileOutputStream - > Javadan dışaruya veri vermek için kullanılır.
-             */
+
             FileInputStream input = new FileInputStream(path);
 
             properties = new Properties();

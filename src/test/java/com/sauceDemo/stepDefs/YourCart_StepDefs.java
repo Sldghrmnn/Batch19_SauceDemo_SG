@@ -17,9 +17,8 @@ public class YourCart_StepDefs {
     @Then("The user should be able to see the following items on the page that added before")
     public void the_user_should_be_able_to_see_the_following_items_on_the_page_that_added_before(List<String> expectedItem) {
         List<String> actualItems = yourCartPage.getCartItemsText();
-
        assertTrue(actualItems.containsAll(expectedItem));
-    //assertEquals(expectedItem, actualItems);
+        //assertEquals(expectedItem, actualItems);
     }
 
     @When("The user navigates to next page with related button: {string}")
