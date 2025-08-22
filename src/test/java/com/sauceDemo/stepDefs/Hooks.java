@@ -1,5 +1,6 @@
 package com.sauceDemo.stepDefs;
 
+import com.sauceDemo.utilities.BrowserUtils;
 import com.sauceDemo.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -25,6 +26,7 @@ public class Hooks {
           final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
           scenario.attach(screenshot,"image/png","screenshot");
         }
+       // BrowserUtils.waitFor(2);
         Driver.closeDriver();
     }
 }

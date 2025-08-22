@@ -9,9 +9,7 @@ public class ConfigurationReader {
 
     static {
         try {
-
             String path = "configuration.properties";
-
             /**
              * FileInputStream -> Javaya dışarıdan veri almak için kullanılır
              * FileOutputStream - > Javadan dışaruya veri vermek için kullanılır.
@@ -21,7 +19,6 @@ public class ConfigurationReader {
             properties = new Properties();
 
             properties.load(input);
-
             input.close();
         } catch (Exception e) {
             e.printStackTrace();
